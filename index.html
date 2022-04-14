@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+</head>
+<body>
+    <h1>How to develop good Html coding habits</h1>
+    <br>
+    <div class="container">
+    <div class="card">
+        <h5 class="card-title">Basic programming Logic</h5>
+        <div class="card-body">
+            <p class="card-text">
+                Programming logic is a set of principles that delineates how elements should be arranged so a computer can perform specific tasks. 
+            </p>
+            <div class="hidden" id="hide">
+                <div class="col-8 m-5 p-5 text-light">
+                    <p>Good coding habits can be developed by applying basic Html logic(set of principles that delineates how elements should be arranged in Html)</p>
+                    <p>Elements are arranged in Html via a style guide that focuses on family tree and indentation.</p>
+                </div>
+            </div>
+            <button 
+            id="button"
+            class="btn btn-primary" 
+            type="button" 
+            onclick="myFunction('hide')"
+            >
+            How do you develop good coding habits
+            </button>
+        </div>
+    </div><br>
+
+    <div class="card">
+        <h5 class="card-title">Family Tree</h5>
+        <div class="card-body">
+            <p class="card-text">
+                Each HTML document can actually be referred to as a document tree. We describe the elements in the tree like we would describe a family tree. There are ancestors, descendants, parents, children and siblings.
+            </p>
+            <div class="hidden" id="hideM">
+                <div class="col-8 m-5 p-5 text-light">
+                <p>
+                    It is important to understand the document tree because CSS selectors use the document tree.
+                </p>
+                </div>
+            </div>
+            <button 
+            class="btn btn-primary" 
+            type="button" 
+            onclick="myFunction('hideM')"
+            >
+            Why is the family tree important
+            </button>
+        </div>
+    </div><br>
+
+    <div class="card">
+        <h5 class="card-title">Example of Family Tree</h5>
+        <div class="card-body">
+            <code>
+                <pre>
+                    &lt;body&gt;
+                        &lt;div id="intro"&gt;
+                            &lt;h1&gt;Hello World!&lt;/h1&gt;
+                            &lt;p&gt;I am a web developer&lt;/p&gt;
+                            &lt;p&gt;based in Berlin&lt;/p&gt;
+                            &lt;hr&gt;
+                        &lt;/div&gt;                    
+                        &lt;div id="navbar"&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;item 1&lt;/li&gt;
+                                &lt;li&gt;item 2&lt;/li&gt;
+                                &lt;li&gt;item 3&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                </pre>
+            </code>
+            <button 
+            class="btn btn-primary" 
+            type="button" 
+            onclick="myFunction('hideMe')"
+            >
+            What is position &lt;body&gt; tag in family tree
+            </button>
+            <div class="hidden" id="hideMe">
+                <div class="col-8 m-5 p-5 text-light">
+                <p>In the family tree example, the &lt;body&gt; element is the ancestor of all other elements on the page.</p>
+                <p>
+                An ancestor refers to any element that is connected but further up the document tree - no matter how many levels higher.
+                </p>
+                <p>The &lt;head&gt; section of the document is omitted for brevity.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="card">
+        <h5 class="card-title">Family Tree Diagram</h5>
+        <div class="card-body">
+            <div>
+                <img src="./image/diagramOne.png" alt="family tree image" />
+            </div>
+            <div class="hidden" id="hideMeT">
+                <div class="col-8 m-5 p-1 text-light">
+                    <img src="./image/diagramTwo.png" alt="descendant">
+                    <p>In the diagram, all elements that are connected below the &lt;div&gt; element are descendants of that &lt;div&gt;.</p>
+                    <p>
+                        A descendant refers to any element that is connected but lower down the document tree - no matter how many levels lower.
+                    </p>
+                </div>
+                <div class="col-8 m-5 p-1 text-light">
+                    <h5>Parent and Child</h5>
+                    <p>
+                        A parent is an element that is directly above and connected to an element in the document tree
+                        . In the diagram below, the &lt;div&gt; is a parent to the &lt;ul&gt;.
+                    </p>
+                    <p>
+                        A child is an element that is directly below and connected to an element in the document tree. In the diagram above
+                        , the &lt;ul&gt; is a child to the &lt;div&gt;.
+                    </p>
+                    <img src="./image/diagramThree.png" alt="parents">
+                </div>
+                <div class="col-8 m-5 p-1 text-light">
+                    <h5>Siblings</h5>
+                    <p>A sibling is an element that shares the same parent with another element.</p>
+                    <p>In the diagram below, the &lt;li&gt;'s are siblings as they all share the same parent - the &lt;ul&gt;.</p>
+                    <img src="./image/diagramFour.png" alt="sibling">
+                </div>
+            </div>
+            <button 
+            class="btn btn-primary" 
+            type="button" 
+            onclick="myFunction('hideMeT')"
+            >
+                Which elements are the descendants
+            </button>
+        </div>
+    </div><br>
+
+    <div class="card">
+        <h5 class="card-title">Indentation</h5>
+        <div class="card-body">
+            <p class="card-text">
+                Spacing and indentation should be consistent throughout your code. Many developers choose to use 4-space or 2-space indentation. In HTML, each nested tag should be indented exactly once inside of its parent tag.
+            </p>
+            <div class="hidden" id="hideMeToo">
+                <div class="col-6 m-1 p-1 text-light">
+                    <h6>Bad Indentation</h6>
+                    <img src="./image/badIndent1.png" alt="Bad indentation" />
+                    <p></p>
+                    <img src="./image/badIndent2.png" alt="Bad indentation" />
+                    <p></p>
+                    <img src="./image/badIndent3.png" alt="Bad indentation" />
+                </div>
+                <div class="col-6 m-1 p-1 text-light">
+                    <h6>Good Indentation</h6>
+                    <img src="./image/goodIndent1.png" alt="Bad indentation" />
+                    <p></p>
+                    <img src="./image/goodIndent2.png" alt="Bad indentation" />
+                    <p></p>
+                    <img src="./image/goodIndent3.png" alt="Bad indentation" />
+                </div>
+                <h5>Nesting Tags</h5>
+                <p>Close tags in the opposite order in which they were opened.</p>
+                <p>Always nest every inline element inside of a block element.</p>
+                <p>
+                    For example, don't just put an &lt;a&gt; tag directly inside the body; instead, place it inside a p or li or other block-level element.
+                </p>
+            </div>
+            <button 
+            class="btn btn-primary" 
+            type="button" 
+            onclick="myFunction('hideMeToo')"
+            >
+                Examples of good and bad indentation
+            </button>
+        </div>
+    </div><br>
+
+    <div class="card">
+        <h5 class="card-title">Line Formatting, Spacing and Self-Closing Tags</h5>
+
+        <div class="card-body">
+            <div class="hidden" id="hideIt1">
+                <div class="col-8 m-5 p-5 text-light">
+                    <h6>Long Lines</h6>
+                    <p>
+                        You should not have any lines that are longer than 100 characters in your HTML code. When any line is longer than 100 characters, break it apart into multiple lines.
+                    </p>
+                    <p>
+                        <span>Exception:</span> When using a long url, you may keep it on one line if it is longer than 100 characters (breaking apart a url is worse style than having this exception for long lines).
+                    </p>
+                    <h6>Blank Lines</h6>
+                    <p>
+                        Place a blank line between sections of the page and between large elements contain a lot of content. You should not have more than one blank line in a row.
+                    </p>
+
+                    <p>
+                        You should not use  &lt;br /&gt; for the purpose of adding vertical spacing between elements. This tag is used solely for line breaks within a paragraph, and you should not use more than one in a row.
+                    </p>
+                </div>
+            </div>
+            <button 
+            class="btn btn-primary" 
+            type="button" 
+            onclick="myFunction('hideIt1')"
+            >
+            Line Formatting
+            </button>
+            <div class="hidden" id="hideIt2">
+                <div class="col-8 m-5 p-5 text-light">
+                    <h6>Spacing in Tags</h6>
+                    <p>
+                        Do not place whitespace between a tag's &lt; brace and the element name.
+                    </p>
+                    <h6>Bad Example</h6>
+                    <p>&lt; p &gt;</p>
+                    <h6>Good Example</h6>
+                    <p>&lt;p&gt;</p>
+                </div>
+            </div>
+            <button 
+            class="btn btn-primary" 
+            type="button" 
+            onclick="myFunction('hideIt2')"
+            >
+            Spacing
+            </button>
+            <div class="hidden" id="hideIt">
+                <div class="col-8 m-5 p-5 text-light">
+                    <h6>Self-Closing Tags and Spacing</h6>
+                    <p>
+                        Self-closing tags may use the &lt;tag /&gt; or &lt;tag&gt; syntax. However, you must be consistent with which style you use.
+                    </p>
+                    <p>
+                        If using the &lt;tag /&gt; style, you should always have a space preceding the closing />.
+                    </p>
+                    <h6>Bad Example</h6>
+                    <p>&lt;br/&gt;</p>
+                    <p>&lt;br&gt;&lt;/br&gt;</p>
+                    <h6>Good Example</h6>
+                    <p>&lt;br&gt;</p>
+                    <p>&lt;br /&gt;
+                </div>
+            </div>
+            <button 
+            class="btn btn-primary" 
+            type="button" 
+            onclick="myFunction('hideIt')"
+            >
+            Self-Closing Tags
+            </button>
+        </div>
+    </div><br>
+
+    <script src="index.js"></script>
+</body>
+</html>
